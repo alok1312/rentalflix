@@ -13,7 +13,6 @@ public class Movie {
 
     public boolean isRented = false;
 
-
     public void setId(int id){
         this.id = id;
     }
@@ -37,6 +36,13 @@ public class Movie {
     }
     public void setLanguage(String language){
         this.language = language;
+    }
+
+    public String toString(){
+        return ("MoviesID: "+this.getId()+","+
+                " Movie Title: "+this.getTitle()+","+
+                " Movie year: "+this.getYear()+","+
+                " Movie Language: "+this.getLanguage());
     }
 }
 
